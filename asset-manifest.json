@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/redlab-test/static/css/main.050523cc.chunk.css",
+    "main.js": "/redlab-test/static/js/main.6893e7c9.chunk.js",
+    "main.js.map": "/redlab-test/static/js/main.6893e7c9.chunk.js.map",
+    "runtime-main.js": "/redlab-test/static/js/runtime-main.c787ab72.js",
+    "runtime-main.js.map": "/redlab-test/static/js/runtime-main.c787ab72.js.map",
+    "static/js/2.a32e2bbe.chunk.js": "/redlab-test/static/js/2.a32e2bbe.chunk.js",
+    "static/js/2.a32e2bbe.chunk.js.map": "/redlab-test/static/js/2.a32e2bbe.chunk.js.map",
+    "index.html": "/redlab-test/index.html",
+    "precache-manifest.7651735cccd8228c5fd2faecc46605c5.js": "/redlab-test/precache-manifest.7651735cccd8228c5fd2faecc46605c5.js",
+    "service-worker.js": "/redlab-test/service-worker.js",
+    "static/css/main.050523cc.chunk.css.map": "/redlab-test/static/css/main.050523cc.chunk.css.map",
+    "static/js/2.a32e2bbe.chunk.js.LICENSE.txt": "/redlab-test/static/js/2.a32e2bbe.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c787ab72.js",
+    "static/js/2.a32e2bbe.chunk.js",
+    "static/css/main.050523cc.chunk.css",
+    "static/js/main.6893e7c9.chunk.js"
+  ]
+}
