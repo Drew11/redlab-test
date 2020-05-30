@@ -1,0 +1,34 @@
+.sort {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 300px;
+    border: 1px solid gray;
+    margin-right: 10px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    display: flex;
+}
+
+li {
+    border: 1px solid gray;
+    cursor: pointer;
+    margin: 2px;
+    font-weight: bold;
+    float: left;
+    flex: 1 1 0;
+    text-align: center;
+}
+li:hover {
+    background: goldenrod;
+}
+
+.active {
+    background: forestgreen;
+}
