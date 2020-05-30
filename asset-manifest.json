@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/redlab-test/static/css/main.e8ae6148.chunk.css",
-    "main.js": "/redlab-test/static/js/main.2d223848.chunk.js",
-    "main.js.map": "/redlab-test/static/js/main.2d223848.chunk.js.map",
+    "main.js": "/redlab-test/static/js/main.139237ae.chunk.js",
+    "main.js.map": "/redlab-test/static/js/main.139237ae.chunk.js.map",
     "runtime-main.js": "/redlab-test/static/js/runtime-main.c787ab72.js",
     "runtime-main.js.map": "/redlab-test/static/js/runtime-main.c787ab72.js.map",
     "static/js/2.2760e0c1.chunk.js": "/redlab-test/static/js/2.2760e0c1.chunk.js",
     "static/js/2.2760e0c1.chunk.js.map": "/redlab-test/static/js/2.2760e0c1.chunk.js.map",
     "index.html": "/redlab-test/index.html",
-    "precache-manifest.19d51cd815a419a45e55f9e55c5108fc.js": "/redlab-test/precache-manifest.19d51cd815a419a45e55f9e55c5108fc.js",
+    "precache-manifest.0058668a11fa4951cb9848f3c1cdeddb.js": "/redlab-test/precache-manifest.0058668a11fa4951cb9848f3c1cdeddb.js",
     "service-worker.js": "/redlab-test/service-worker.js",
     "static/css/main.e8ae6148.chunk.css.map": "/redlab-test/static/css/main.e8ae6148.chunk.css.map",
     "static/js/2.2760e0c1.chunk.js.LICENSE.txt": "/redlab-test/static/js/2.2760e0c1.chunk.js.LICENSE.txt",
@@ -28,6 +28,6 @@
     "static/js/runtime-main.c787ab72.js",
     "static/js/2.2760e0c1.chunk.js",
     "static/css/main.e8ae6148.chunk.css",
-    "static/js/main.2d223848.chunk.js"
+    "static/js/main.139237ae.chunk.js"
   ]
 }
