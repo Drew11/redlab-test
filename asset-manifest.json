@@ -1,22 +1,33 @@
 {
   "files": {
-    "main.css": "/redlab-test/static/css/main.050523cc.chunk.css",
-    "main.js": "/redlab-test/static/js/main.6893e7c9.chunk.js",
-    "main.js.map": "/redlab-test/static/js/main.6893e7c9.chunk.js.map",
+    "main.css": "/redlab-test/static/css/main.e8ae6148.chunk.css",
+    "main.js": "/redlab-test/static/js/main.2d223848.chunk.js",
+    "main.js.map": "/redlab-test/static/js/main.2d223848.chunk.js.map",
     "runtime-main.js": "/redlab-test/static/js/runtime-main.c787ab72.js",
     "runtime-main.js.map": "/redlab-test/static/js/runtime-main.c787ab72.js.map",
-    "static/js/2.a32e2bbe.chunk.js": "/redlab-test/static/js/2.a32e2bbe.chunk.js",
-    "static/js/2.a32e2bbe.chunk.js.map": "/redlab-test/static/js/2.a32e2bbe.chunk.js.map",
+    "static/js/2.2760e0c1.chunk.js": "/redlab-test/static/js/2.2760e0c1.chunk.js",
+    "static/js/2.2760e0c1.chunk.js.map": "/redlab-test/static/js/2.2760e0c1.chunk.js.map",
     "index.html": "/redlab-test/index.html",
-    "precache-manifest.7651735cccd8228c5fd2faecc46605c5.js": "/redlab-test/precache-manifest.7651735cccd8228c5fd2faecc46605c5.js",
+    "precache-manifest.19d51cd815a419a45e55f9e55c5108fc.js": "/redlab-test/precache-manifest.19d51cd815a419a45e55f9e55c5108fc.js",
     "service-worker.js": "/redlab-test/service-worker.js",
-    "static/css/main.050523cc.chunk.css.map": "/redlab-test/static/css/main.050523cc.chunk.css.map",
-    "static/js/2.a32e2bbe.chunk.js.LICENSE.txt": "/redlab-test/static/js/2.a32e2bbe.chunk.js.LICENSE.txt"
+    "static/css/main.e8ae6148.chunk.css.map": "/redlab-test/static/css/main.e8ae6148.chunk.css.map",
+    "static/js/2.2760e0c1.chunk.js.LICENSE.txt": "/redlab-test/static/js/2.2760e0c1.chunk.js.LICENSE.txt",
+    "static/media/cat.svg": "/redlab-test/static/media/cat.c495286f.svg",
+    "static/media/dog.svg": "/redlab-test/static/media/dog.85663da2.svg",
+    "static/media/fox.svg": "/redlab-test/static/media/fox.ec0401f8.svg",
+    "static/media/koala.svg": "/redlab-test/static/media/koala.5cced49d.svg",
+    "static/media/lion.svg": "/redlab-test/static/media/lion.3c6574b3.svg",
+    "static/media/owl.svg": "/redlab-test/static/media/owl.1d9a9537.svg",
+    "static/media/penguin.svg": "/redlab-test/static/media/penguin.8e2badb7.svg",
+    "static/media/pig.svg": "/redlab-test/static/media/pig.296123ee.svg",
+    "static/media/raccoon.svg": "/redlab-test/static/media/raccoon.7c68f014.svg",
+    "static/media/react.svg": "/redlab-test/static/media/react.11a8f47e.svg",
+    "static/media/sheep.svg": "/redlab-test/static/media/sheep.2e62bc7b.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.c787ab72.js",
-    "static/js/2.a32e2bbe.chunk.js",
-    "static/css/main.050523cc.chunk.css",
-    "static/js/main.6893e7c9.chunk.js"
+    "static/js/2.2760e0c1.chunk.js",
+    "static/css/main.e8ae6148.chunk.css",
+    "static/js/main.2d223848.chunk.js"
   ]
 }
