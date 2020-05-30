@@ -76,7 +76,7 @@ class App extends React.Component {
   };
 
   async componentDidMount(){
-    const promise = await fetch('http://drew11.github.io/redlab-test/materials/data/data.json', {
+    const promise = await fetch('https://drew11.github.io/redlab-test/materials/data/data.json', {
         mode: 'cors'
     });
     const data = await promise.json();
