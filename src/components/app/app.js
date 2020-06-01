@@ -15,7 +15,8 @@ class App extends React.Component {
         langInterface: 'ru',
         sortQuery: 'id',
         sortingParameter: 'increase',
-        filterQuery: ''
+        filterQuery: '',
+        favorites: []
     };
   }
 
@@ -80,31 +81,59 @@ class App extends React.Component {
       this.setState({appView})
   };
 
+  addFavorites = (id) => {
+    let favorites;
+
+    if(!this.state.favorites.includes(id)){
+        favorites = [...this.state.favorites];
+        favorites.push(id);
+    } else {
+        favorites = this.state.favorites.filter(userId=>userId!==id);
+    }
+
+    this.setState({ favorites })
+  };
+
+  componentDidUpdate(prevProps, prevState){
+      if(prevState!==this.state) {
+          const copy = {...this.state};
+          copy.users = null;
+          window.localStorage.setItem('state', JSON.stringify(copy));
+      }
+  }
+
   async componentDidMount(){
+
     const promise = await fetch('https://drew11.github.io/redlab-test/materials/data/data.json', {
         mode: 'cors'
     });
     const data = await promise.json();
+    const localeStorageState = JSON.parse(window.localStorage.getItem('state'));
 
-    this.setState({users: data},
+    this.setState({...localeStorageState,
+            users: data
+        },
         ()=>this.sort(this.state.sortQuery, this.state.sortingParameter)
     );
   }
 
 
   render(){
-        console.log(this.state.users)
+
       const users = this.state.users ? this.getFilteredUsers().map((user, index)=>{
         let component;
 
         if(this.state.appView === 'table'){
              component = <UserViewTable
                    key={user.id}
+                   id={user.id}
                    index={index}
                    userImage={user.image}
                    userName={user.name[this.state.langInterface]}
                    userAge={user.age}
                    userPhone={user.phone}
+                   addFavorites={this.addFavorites}
+                   favorites={this.state.favorites}
              />
         }
 
@@ -145,6 +174,7 @@ class App extends React.Component {
                         <input
                             onChange={this.setFilterQuery}
                             type="text"
+                            value={this.state.filterQuery}
                         />
 
                     </div>
@@ -208,7 +238,6 @@ class App extends React.Component {
           </div>
       );
   }
-
 }
 
 export default App;

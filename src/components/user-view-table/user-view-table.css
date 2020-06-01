@@ -1,5 +1,6 @@
 .user-view-table {
     display: flex;
+    position: relative;
     justify-content:  space-between;
     align-items: center;
     max-width: 600px;
@@ -8,6 +9,7 @@
     margin-top: 2px;
     border-radius: 2px;
     background-color: whitesmoke;
+    transition-delay: 2ms;
 }
 
 img {
@@ -22,6 +24,93 @@ img {
     display: flex;
 }
 
+
+.bg-golden {
+    color: goldenrod;
+}
+
+.favorites {
+    display: block;
+    margin-right: 10px;
+}
+.star {
+    position: relative;
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin-left: .9em;
+    margin-right: .9em;
+    margin-bottom: 1.2em;
+    border-right:  .3em solid transparent;
+    border-bottom: .7em  solid gray;
+    border-left:   .3em solid transparent;
+    font-size: 15px;
+}
+
+.star-active {
+    position: relative;
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin-left: .9em;
+    margin-right: .9em;
+    margin-bottom: 1.2em;
+    border-right:  .3em solid transparent;
+    border-bottom: .7em  solid gold;
+    border-left:   .3em solid transparent;
+    font-size: 15px;
+}
+
+.star-active:before, .star-active:after{
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: .6em;
+    left: -1em;
+    border-right:  1em solid transparent;
+    border-bottom: .7em  solid gold;
+    border-left:   1em solid transparent;
+    transform: rotate(-35deg);
+}
+
+.star-active:after {
+    transform: rotate(35deg);
+}
+
+.star-active:hover
+{
+    cursor: pointer;
+}
+
+.star:hover:before,
+.star:hover:after,
+.star:hover
+{
+    border-bottom: .7em solid gold;
+    cursor: pointer;
+}
+
+.star:before, .star:after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: .6em;
+    left: -1em;
+    border-right:  1em solid transparent;
+    border-bottom: .7em  solid gray;
+    border-left:   1em solid transparent;
+    transform: rotate(-35deg);
+}
+
+.star::after {
+     transform: rotate(35deg);
+ }
+
+
 @media screen and (max-width: 620px){
     .user-view-table {
     }
@@ -31,11 +120,11 @@ img {
 }
 
 @keyframes fadein {
-    from {
-        opacity: 0;
+    0% {
+        top: 0;
     }
-    to {
-        opacity: 1;
+    100% {
+        top: 50px;
     }
 }
 

@@ -24,6 +24,8 @@ li {
     float: left;
     flex: 1 1 0;
     text-align: center;
+    transition-property: background;
+    transition-duration: 0.1s;
 }
 li:hover {
     background: goldenrod;

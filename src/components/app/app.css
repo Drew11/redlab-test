@@ -48,7 +48,16 @@ header {
   width: 200px;
   height: 30px;
   font-size: 18px;
+  background: gainsboro;
+  transition-property: background, box-shadow ;
+  transition-duration: 0.3s;
 }
+.search input:focus {
+  box-shadow: 0 0 10px red;
+  background: white;
+}
+
+
 .search span {
   color: white;
   display: block;

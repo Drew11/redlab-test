@@ -3,15 +3,18 @@ import './user-view-table.css';
 
 const UserViewTable = (props)=>{
     const {
+        id,
         index,
         userImage,
         userName,
         userAge,
-        userPhone
+        userPhone,
+        addFavorites,
+        favorites
     } = props;
 
     const style = {
-        animation: `fadein ${index}s`
+        animation: `fadein ${index/2}s`
     };
 
     return (
@@ -36,7 +39,14 @@ const UserViewTable = (props)=>{
                       {
                           userPhone
                       }
-                  </span>
+            </span>
+
+            <span className="favorites">
+                <i
+                    className={`${favorites.includes(id)? 'star-active': 'star'}`}
+                    onClick={()=>addFavorites(id)}
+                />
+            </span>
 
         </div>
     )

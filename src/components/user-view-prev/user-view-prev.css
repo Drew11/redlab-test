@@ -28,7 +28,7 @@
 
 .width100 {
     flex: 0 calc(80% + 12px);
-    margin: 0 15px;
+    margin: 5px 0;
 }
 .video {
     display: flex;
@@ -42,8 +42,7 @@
     margin-left: 10px;
 }
 
-@media screen and (max-width: 720px){
-    /*.user-view-prev*/
+@media screen and (max-width: 700px){
     .user-view-prev {
         flex: 0 100%;
         width: 100%;
