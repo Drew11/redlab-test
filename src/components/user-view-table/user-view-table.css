@@ -18,9 +18,8 @@ img {
 }
 
 .name, .age , .phone {
-    width: 200px;
+    width: 300px;
     display: flex;
-    justify-content: center;
 }
 
 @media screen and (max-width: 620px){
@@ -29,5 +28,18 @@ img {
     .name, .age , .phone {
         width: 100px;
     }
+}
 
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.moving-item {
+    transition: all 1s ease;
+    -webkit-transition: all 1s ease;
 }

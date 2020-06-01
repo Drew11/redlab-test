@@ -3,14 +3,19 @@ import './user-view-table.css';
 
 const UserViewTable = (props)=>{
     const {
+        index,
         userImage,
         userName,
         userAge,
         userPhone
     } = props;
 
+    const style = {
+        animation: `fadein ${index}s`
+    };
+
     return (
-        <div className="user-view-table">
+        <div className="user-view-table" style={style}>
             <img src={require(`../../materials/images/${userImage}.svg`)} alt=""/>
 
             <span className="name">

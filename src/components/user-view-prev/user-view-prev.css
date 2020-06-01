@@ -1,0 +1,58 @@
+.user-view-prev-container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.user-view-prev {
+    flex: 0 40%;
+    margin: 5px 5px ;
+    display: flex;
+    border: 1px solid darkgray;
+    box-shadow: gray;
+    border-radius: 3px;
+    background-color: whitesmoke;
+    overflow: hidden;
+
+}
+.avatar-name {
+    display: flex;
+    align-items: center;
+    flex-basis: auto;
+}
+
+.phrase {
+    flex: 1 1 0;
+    margin-left: 10px;
+    width: 300px;
+}
+
+.width100 {
+    flex: 0 calc(80% + 12px);
+    margin: 0 15px;
+}
+.video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.user-view-prev .age, .user-view-prev .name, .user-view-prev .phone {
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+@media screen and (max-width: 720px){
+    /*.user-view-prev*/
+    .user-view-prev {
+        flex: 0 100%;
+        width: 100%;
+        flex-direction: column;
+        margin: 5px 10px ;
+    }
+    .width100 {
+        flex: 0 100%;
+        margin: 5px 10px;
+    }
+
+}

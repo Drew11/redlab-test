@@ -1,5 +1,6 @@
 import React from 'react';
 import UserViewTable from '../user-view-table/user-view-table';
+import UserViewPrev from '../user-view-prev/user-view-prev';
 import Sort from '../sort/sort';
 
 import './app.css';
@@ -71,8 +72,12 @@ class App extends React.Component {
         })
   };
 
-  switchInterfaceLang = (event)=>{
+  switchInterfaceLang = (event) => {
       this.setState({langInterface: event.target.value})
+  };
+
+  setAppView = (appView) => {
+      this.setState({appView})
   };
 
   async componentDidMount(){
@@ -86,47 +91,77 @@ class App extends React.Component {
     );
   }
 
-  render(){
 
-      console.log(this.state.users)
-      const users = this.state.users ? this.getFilteredUsers().map(user=>{
-          return (
-              <UserViewTable key={user.id}
-                             userImage={user.image}
-                             userName={user.name[this.state.langInterface]}
-                             userAge={user.age}
-                             userPhone={user.phone}
-              />
-          )
+  render(){
+        console.log(this.state.users)
+      const users = this.state.users ? this.getFilteredUsers().map((user, index)=>{
+        let component;
+
+        if(this.state.appView === 'table'){
+             component = <UserViewTable
+                   key={user.id}
+                   index={index}
+                   userImage={user.image}
+                   userName={user.name[this.state.langInterface]}
+                   userAge={user.age}
+                   userPhone={user.phone}
+             />
+        }
+
+        if (this.state.appView === 'prev'){
+
+            component = <UserViewPrev
+                            key={user.id}
+                            userImage={user.image}
+                            userName={user.name[this.state.langInterface]}
+                            userAge={user.age}
+                            userPhone={user.phone}
+                            userPhrase={user.phrase[this.state.langInterface]}
+                            userVideo={Object.getOwnPropertyNames(user).includes('video')? user.video : null}
+                         />
+
+        }
+
+          return component;
 
       }): null;
 
       const search = this.state.langInterface === 'ru' ?'Поиск':'Search';
+      const tableStyle = this.state.appView === 'table'? 'direction-column': '';
 
       return (
           <div className="App">
             <header>
               <h1>Test task</h1>
 
-                <select name="lang" id=""
-                        onChange={this.switchInterfaceLang}
-                        value={this.state.langInterface}
-                >
-                    <option value="ru"  >Ru</option>
-                    <option value="en" >En</option>
-                </select>
+                <div className="lang-search-wrapper">
+
+                    <div className="search">
+
+                        <span>
+                            {search}
+                        </span>
+
+                        <input
+                            onChange={this.setFilterQuery}
+                            type="text"
+                        />
+
+                    </div>
+
+                    <div className="lang-select">
+                        <select name="lang" id=""
+                                onChange={this.switchInterfaceLang}
+                                value={this.state.langInterface}
+                        >
+                            <option value="ru" >Ru</option>
+                            <option value="en" >En</option>
+                        </select>
+                    </div>
 
 
-                <div className="search">
-                    <span>
-                        {search}
-                    </span>
-
-                    <input
-                        onChange={this.setFilterQuery}
-                        type="text"
-                    />
                 </div>
+
 
                 <div className="sort-view-wrapper">
                     <Sort
@@ -137,8 +172,22 @@ class App extends React.Component {
                     />
 
                     <ul className="app-view">
-                        <li>{'Таблица'}</li>
-                        <li>{'Превью'}</li>
+                        <li
+                            className={this.state.appView === 'table'? 'active': ''}
+                            onClick={()=>this.setAppView('table')}
+                        >
+                            { this.state.langInterface==='ru'?'Таблица': '' }
+                            { this.state.langInterface==='en'?'Table': '' }
+
+                        </li>
+
+                        <li
+                            className={this.state.appView === 'prev'? 'active': ''}
+                            onClick={()=>this.setAppView('prev')}
+                        >
+                            { this.state.langInterface === 'ru'? 'Превью': '' }
+                            { this.state.langInterface === 'en' ?'Preview': '' }
+                        </li>
                     </ul>
 
                 </div>
@@ -146,8 +195,11 @@ class App extends React.Component {
             </header>
 
             <main>
+                <div className={`main-view-container ${tableStyle}`}>
 
-                { users }
+                    { users }
+
+                </div>
             </main>
 
               <footer>
