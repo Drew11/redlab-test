@@ -121,10 +121,10 @@ img {
 
 @keyframes fadein {
     0% {
-        top: 0;
+        opacity: 0;
     }
     100% {
-        top: 50px;
+        opacity: 1;
     }
 }
 
