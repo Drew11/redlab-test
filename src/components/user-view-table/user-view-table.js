@@ -1,5 +1,6 @@
-import React from 'react';
+import React, {useState, useRef } from 'react';
 import './user-view-table.css';
+
 
 const UserViewTable = (props)=>{
     const {
@@ -14,7 +15,7 @@ const UserViewTable = (props)=>{
     } = props;
 
     const style = {
-        animationDelay: `${index/2}s`,
+        animationDelay: `${index/4}s`,
         animationName: `fadein`,
         animationDuration: `1s`,
         animationIterationCount: 1,
@@ -22,7 +23,11 @@ const UserViewTable = (props)=>{
     };
 
     return (
-        <div className="user-view-table" style={style}>
+        <div
+            className="user-view-table"
+            style={style}
+        >
+
             <img src={require(`../../materials/images/${userImage}.svg`)} alt=""/>
 
             <span className="name">

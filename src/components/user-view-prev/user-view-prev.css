@@ -53,5 +53,9 @@
         flex: 0 100%;
         margin: 5px 10px;
     }
+}
 
+
+.test {
+    background: red;
 }

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState, useEffect, useRef } from 'react';
 import './user-view-prev.css';
 
 const UserViewPrev = (props) => {
@@ -11,10 +11,28 @@ const UserViewPrev = (props) => {
         userVideo
     } = props;
 
+    const [autoPlay, setAutoPlay] = useState(false);
     const width100 = userVideo ? 'width100' : '';
+    const userViewTableRef = useRef();
+
+    const listenScrollEvent = event => {
+        console.log(window.scrollY < userViewTableRef.current.offsetTop)
+        if (window.scrollY > 300) {
+            setAutoPlay(true);
+        }
+
+    };
+
+    useEffect(() => {
+        window.addEventListener("scroll", listenScrollEvent);
+
+        return () => window.removeEventListener("scroll", listenScrollEvent);
+    }, []);
 
     return (
-            <div className={`user-view-prev ${width100}`}>
+            <div className={`user-view-prev ${width100}`}
+                 ref={userViewTableRef}
+            >
 
                 <div className="user-info">
                     <div className="avatar-name">
@@ -41,7 +59,7 @@ const UserViewPrev = (props) => {
                 <div className="video">
                     {
                         userVideo &&
-                        <video width="300" height="100%" controls="controls" autoPlay={'autoPlay'}
+                        <video width="300" height="100%" controls="controls" autoPlay={autoPlay}
                         >
                             <source src={require(`../../materials/videos/${userVideo}.mp4`)}/>
                         </video>
