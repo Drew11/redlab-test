@@ -1,27 +1,31 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "31a232141a471dcafc46e36ef15f5cb8",
+    "revision": "038ca76fb083f3dccb943c5d21efcf73",
     "url": "/redlab-test/index.html"
   },
   {
-    "revision": "4b45fb074f601ca631e5",
-    "url": "/redlab-test/static/css/main.e8ae6148.chunk.css"
+    "revision": "d46712ded918d3247b10",
+    "url": "/redlab-test/static/css/main.9b4015f2.chunk.css"
   },
   {
-    "revision": "bf25d8ad6b8a3a7b0358",
-    "url": "/redlab-test/static/js/2.2760e0c1.chunk.js"
+    "revision": "734a4b0336c90b456a2e",
+    "url": "/redlab-test/static/js/2.3f68b243.chunk.js"
   },
   {
     "revision": "e88a3e95b5364d46e95b35ae8c0dc27d",
-    "url": "/redlab-test/static/js/2.2760e0c1.chunk.js.LICENSE.txt"
+    "url": "/redlab-test/static/js/2.3f68b243.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "4b45fb074f601ca631e5",
-    "url": "/redlab-test/static/js/main.139237ae.chunk.js"
+    "revision": "d46712ded918d3247b10",
+    "url": "/redlab-test/static/js/main.d5a1477d.chunk.js"
   },
   {
     "revision": "ad3f0cbe184afcf74236",
     "url": "/redlab-test/static/js/runtime-main.c787ab72.js"
+  },
+  {
+    "revision": "bf80c094626ee44af80267dfde4ff420",
+    "url": "/redlab-test/static/media/boy.bf80c094.mp4"
   },
   {
     "revision": "c495286fdc3bd004dce13cf5aba929c7",
@@ -66,5 +70,9 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "2e62bc7b325fee3c5ca65a1d0e1c8c2a",
     "url": "/redlab-test/static/media/sheep.2e62bc7b.svg"
+  },
+  {
+    "revision": "93fec09c9929ab21a395f2fd81b8b041",
+    "url": "/redlab-test/static/media/shoe.93fec09c.mp4"
   }
 ]);
