@@ -14,7 +14,11 @@ const UserViewTable = (props)=>{
     } = props;
 
     const style = {
-        animation: `fadein ${index/5}s`
+        animationDelay: `${index/2}s`,
+        animationName: `fadein`,
+        animationDuration: `1s`,
+        animationIterationCount: 1,
+        animationFillMode: `forwards`,
     };
 
     return (
