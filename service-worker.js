@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/redlab-test/precache-manifest.f0e2b478f1157e5729606e94ed11827f.js"
+  "/redlab-test/precache-manifest.481bb8558e435decb3521c8926d86589.js"
 );
 
 self.addEventListener('message', (event) => {
