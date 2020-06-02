@@ -18,22 +18,21 @@ const UserViewPrev = (props) => {
     const userViewTableRef = useRef();
 
     const listenScrollEvent = event => {
-        console.log(window.scrollY + 600, userViewTableRef.current.offsetTop , userViewTableRef.current)
-        if ( y > userViewTableRef.current.offsetTop) {
-
-            setY(window.scrollY+y);
-            setAutoPlay(true);
-            setColor('test');
-        }
-
+        const newCoord = window.scrollY + y;
+        setY(newCoord);
     };
 
     useEffect(() => {
         window.addEventListener("scroll", listenScrollEvent);
-
         return () => window.removeEventListener("scroll", listenScrollEvent);
     }, []);
 
+    useEffect(() => {
+        if ( y > userViewTableRef.current.offsetTop) {
+            setAutoPlay(true);
+            setColor('test');
+        }
+    }, [y]);
 
     return (
             <div className={`user-view-prev ${width100}`}
