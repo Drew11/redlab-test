@@ -12,13 +12,18 @@ const UserViewPrev = (props) => {
     } = props;
 
     const [autoPlay, setAutoPlay] = useState(false);
+    const [y, setY] = useState(600);
+    const [color, setColor] = useState('');
     const width100 = userVideo ? 'width100' : '';
     const userViewTableRef = useRef();
 
     const listenScrollEvent = event => {
-        console.log(window.scrollY < userViewTableRef.current.offsetTop)
-        if (window.scrollY > 300) {
+        console.log(window.scrollY + 600, userViewTableRef.current.offsetTop , userViewTableRef.current)
+        if ( y > userViewTableRef.current.offsetTop) {
+
+            setY(window.scrollY+y);
             setAutoPlay(true);
+            setColor('test');
         }
 
     };
@@ -28,6 +33,7 @@ const UserViewPrev = (props) => {
 
         return () => window.removeEventListener("scroll", listenScrollEvent);
     }, []);
+
 
     return (
             <div className={`user-view-prev ${width100}`}
@@ -56,16 +62,18 @@ const UserViewPrev = (props) => {
                     </p>
                 </div>
 
-                <div className="video">
-                    {
-                        userVideo &&
-                        <video width="300" height="100%" controls="controls" autoPlay={autoPlay}
+
+                {
+                    userVideo &&
+                <div className={`video ${color}`} >
+
+                        <video width="1" height="auto" controls="controls" autoPlay={autoPlay}
                         >
                             <source src={require(`../../materials/videos/${userVideo}.mp4`)}/>
                         </video>
-                    }
-                </div>
 
+                </div>
+                }
             </div>
     )
 };

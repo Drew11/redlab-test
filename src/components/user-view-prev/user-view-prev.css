@@ -2,9 +2,10 @@
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
+
 }
 .user-view-prev {
-    flex: 0 40%;
+    flex: 0 35%;
     margin: 5px 5px ;
     display: flex;
     border: 1px solid darkgray;
@@ -13,6 +14,9 @@
     background-color: whitesmoke;
     overflow: hidden;
 
+}
+.user-info{
+    flex: 0 50%;
 }
 .avatar-name {
     display: flex;
@@ -27,15 +31,19 @@
 }
 
 .width100 {
-    flex: 0 calc(80% + 12px);
+    flex: 0 calc(70% + 12px);
     margin: 5px 0;
 }
 .video {
     display: flex;
-    justify-content: center;
+    flex: 0 50%;
+    padding: 10px;
     align-items: center;
 }
 
+video {
+    width: 100%;
+}
 
 .user-view-prev .age, .user-view-prev .name, .user-view-prev .phone {
     margin-top: 10px;
@@ -49,6 +57,11 @@
         flex-direction: column;
         margin: 5px 10px ;
     }
+
+    video {
+        width: 100%
+    }
+
     .width100 {
         flex: 0 100%;
         margin: 5px 10px;

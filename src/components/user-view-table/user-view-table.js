@@ -1,6 +1,5 @@
-import React, {useState, useRef } from 'react';
+import React from 'react';
 import './user-view-table.css';
-
 
 const UserViewTable = (props)=>{
     const {
