@@ -1,6 +1,15 @@
 import React, {useState, useEffect, useRef } from 'react';
 import './user-view-prev.css';
 
+const getWindowDimensions =()=> {
+    const { innerWidth: width, innerHeight: height } = window;
+    return {
+        width,
+        height
+    };
+};
+
+console.log(getWindowDimensions())
 const UserViewPrev = (props) => {
     const {
         userImage,
@@ -12,12 +21,13 @@ const UserViewPrev = (props) => {
     } = props;
 
     const [autoPlay, setAutoPlay] = useState(false);
-    const [y, setY] = useState(600);
+    const [y, setY] = useState(getWindowDimensions().height/2);
     const [color, setColor] = useState('');
     const width100 = userVideo ? 'width100' : '';
     const userViewTableRef = useRef();
 
     const listenScrollEvent = event => {
+
         const newCoord = window.scrollY + y;
         setY(newCoord);
     };
@@ -34,6 +44,7 @@ const UserViewPrev = (props) => {
         }
     }, [y]);
 
+    console.log(y)
     return (
             <div className={`user-view-prev ${width100}`}
                  ref={userViewTableRef}

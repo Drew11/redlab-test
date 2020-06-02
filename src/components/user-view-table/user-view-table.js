@@ -26,35 +26,40 @@ const UserViewTable = (props)=>{
             className="user-view-table"
             style={style}
         >
+            <div className="name-age-wrapper">
+                <img src={require(`../../materials/images/${userImage}.svg`)} alt=""/>
 
-            <img src={require(`../../materials/images/${userImage}.svg`)} alt=""/>
-
-            <span className="name">
+                <span className="name">
                       {
                           userName
                       }
 
                   </span>
 
-            <span className="age">
+                <span className="age">
                       {
                           userAge
                       }
                   </span>
+            </div>
 
 
-            <span className="phone">
+            <div className="phone-favorites-wrapper">
+                <span className="phone">
                       {
                           userPhone
                       }
             </span>
 
-            <span className="favorites">
+                <span className="favorites">
                 <i
                     className={`${favorites.includes(id)? 'star-active': 'star'}`}
                     onClick={()=>addFavorites(id)}
                 />
             </span>
+
+            </div>
+
 
         </div>
     )

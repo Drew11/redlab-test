@@ -5,6 +5,8 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/app/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/app/app.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/user-view-prev/user-view-prev.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/user-view-prev/user-view-prev.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/user-view-table/user-view-table.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/user-view-table/user-view-table.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/user-view-table/user-view-table.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/user-view-table/user-view-table.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -18,20 +20,30 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="user-view-prev.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/components/user-view-prev/user-view-prev.js">
+      <file leaf-file-name="user-view-table.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/user-view-table/user-view-table.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="468">
-              <caret line="34" column="12" lean-forward="true" selection-start-line="34" selection-start-column="12" selection-end-line="34" selection-end-column="12" />
+            <state relative-caret-position="261">
+              <caret line="28" column="44" selection-start-line="28" selection-start-column="28" selection-end-line="28" selection-end-column="44" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="user-view-prev.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/user-view-prev/user-view-prev.css">
+      <file leaf-file-name="user-view-table.css" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/components/user-view-table/user-view-table.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="116">
-              <caret line="34" column="18" lean-forward="true" selection-start-line="34" selection-start-column="18" selection-end-line="34" selection-end-column="18" />
+            <state relative-caret-position="493">
+              <caret line="41" column="28" lean-forward="true" selection-start-line="41" selection-start-column="28" selection-end-line="41" selection-end-column="28" />
+              <folding>
+                <element signature="e#862#1162#0" />
+                <element signature="e#1177#1477#0" />
+                <element signature="e#1518#1794#0" />
+                <element signature="e#1815#1848#0" />
+                <element signature="e#1869#1893#0" />
+                <element signature="e#1946#2006#0" />
+                <element signature="e#2034#2310#0" />
+                <element signature="e#2325#2360#0" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -68,12 +80,12 @@
         <option value="$PROJECT_DIR$/public/index.html" />
         <option value="$PROJECT_DIR$/src/components/sort/sort.css" />
         <option value="$PROJECT_DIR$/src/components/app/app.js" />
-        <option value="$PROJECT_DIR$/src/components/user-view-table/user-view-table.css" />
         <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/src/components/user-view-table/user-view-table.js" />
         <option value="$PROJECT_DIR$/src/components/user-view-prev/user-view-prev.css" />
-        <option value="$PROJECT_DIR$/src/components/app/app.css" />
         <option value="$PROJECT_DIR$/src/components/user-view-prev/user-view-prev.js" />
+        <option value="$PROJECT_DIR$/src/components/app/app.css" />
+        <option value="$PROJECT_DIR$/src/components/user-view-table/user-view-table.js" />
+        <option value="$PROJECT_DIR$/src/components/user-view-table/user-view-table.css" />
       </list>
     </option>
   </component>
@@ -93,7 +105,7 @@
       <path value="$PROJECT_DIR$/package.json" />
     </packageJsonPaths>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="2" />
     <option name="y" value="1" />
     <option name="width" value="1938" />
@@ -129,7 +141,14 @@
               <item name="redlab-test" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="user-view-prev" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="redlab-test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="redlab-test" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="user-view-table" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="redlab-test" type="b2602c69:ProjectViewProjectNode" />
@@ -185,12 +204,12 @@
       <workItem from="1590819696885" duration="25925000" />
       <workItem from="1590906048238" duration="22703000" />
       <workItem from="1590992589626" duration="32111000" />
-      <workItem from="1591072618827" duration="3215000" />
+      <workItem from="1591072618827" duration="17646000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="101435000" />
+    <option name="totallyTimeSpent" value="115866000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -395,13 +414,6 @@
     <entry file="file://$PROJECT_DIR$/yarn-error.log">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/user-view-table/user-view-table.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="473">
-          <caret line="113" lean-forward="true" selection-start-line="113" selection-end-line="113" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="58">
@@ -416,44 +428,58 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/user-view-table/user-view-table.js">
+    <entry file="file://$PROJECT_DIR$/src/components/user-view-prev/user-view-prev.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1127">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
-          <folding>
-            <element signature="e#0#47#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="116">
+          <caret line="34" column="18" selection-start-line="34" selection-start-column="18" selection-end-line="34" selection-end-column="18" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/app/app.css">
+    <entry file="file://$PROJECT_DIR$/src/components/user-view-prev/user-view-prev.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1073">
-          <caret line="20" column="8" lean-forward="true" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="8" />
+        <state relative-caret-position="87">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/app/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3219">
-          <caret line="33" column="34" selection-start-line="33" selection-start-column="34" selection-end-line="33" selection-end-column="34" />
+        <state relative-caret-position="348">
+          <caret line="227" column="39" selection-start-line="227" selection-start-column="33" selection-end-line="227" selection-end-column="52" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/user-view-prev/user-view-prev.css">
+    <entry file="file://$PROJECT_DIR$/src/components/app/app.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="116">
-          <caret line="34" column="18" lean-forward="true" selection-start-line="34" selection-start-column="18" selection-end-line="34" selection-end-column="18" />
+        <state relative-caret-position="2755">
+          <caret line="95" column="16" lean-forward="true" selection-start-line="95" selection-start-column="16" selection-end-line="95" selection-end-column="16" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/user-view-prev/user-view-prev.js">
+    <entry file="file://$PROJECT_DIR$/src/components/user-view-table/user-view-table.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="468">
-          <caret line="34" column="12" lean-forward="true" selection-start-line="34" selection-start-column="12" selection-end-line="34" selection-end-column="12" />
+        <state relative-caret-position="261">
+          <caret line="28" column="44" selection-start-line="28" selection-start-column="28" selection-end-line="28" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/user-view-table/user-view-table.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="41" column="28" lean-forward="true" selection-start-line="41" selection-start-column="28" selection-end-line="41" selection-end-column="28" />
+          <folding>
+            <element signature="e#862#1162#0" />
+            <element signature="e#1177#1477#0" />
+            <element signature="e#1518#1794#0" />
+            <element signature="e#1815#1848#0" />
+            <element signature="e#1869#1893#0" />
+            <element signature="e#1946#2006#0" />
+            <element signature="e#2034#2310#0" />
+            <element signature="e#2325#2360#0" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -1,16 +1,55 @@
 .user-view-table {
     display: flex;
     position: relative;
-    justify-content:  space-between;
+    align-self: center;
     align-items: center;
-    max-width: 600px;
-    height: 50px;
+    width: 600px;
     border: 1px solid gray;
-    margin-top: 2px;
+    margin-top: 4px;
     border-radius: 2px;
     background-color: whitesmoke;
     transition-delay: 2ms;
     opacity: 0;
+    flex-basis: 0;
+    flex-shrink: 1;
+}
+
+.phone-favorites-wrapper {
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.name-age-wrapper {
+    flex-grow: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.name {
+    flex-grow: 2;
+}
+
+.age {
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 20%;
+}
+
+.favorites {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    margin-left: 10px;
+}
+
+.phone {
+    flex-grow: 2;
+    padding-right: 10px;
+    display: flex;
+    justify-content: left;
 }
 
 img {
@@ -20,20 +59,36 @@ img {
     margin: 10px;
 }
 
-.name, .age , .phone {
-    width: 300px;
-    display: flex;
-}
+/*.name , .phone {*/
+    /*display: flex;*/
+    /*flex-grow: 3;*/
+    /*flex-shrink: 3;*/
+    /*flex-basis: 0;*/
+/*}*/
+/*.phone {*/
+    /*justify-content: center;*/
+/*}*/
+/*.name {*/
+    /*flex-grow: 3;*/
+/*}*/
+/*.age , .favorites{*/
+    /*flex-grow: 1;*/
+    /*display: flex;*/
+    /*justify-content: center;*/
+    /*flex-shrink: 1;*/
+    /*flex-basis: 0;*/
+/*}*/
 
+/*.favorites*/
+ /*{*/
+    /*background: firebrick;*/
+/*}*/
 
 .bg-golden {
     color: goldenrod;
 }
 
-.favorites {
-    display: block;
-    margin-right: 10px;
-}
+
 .star {
     position: relative;
     display: inline-block;
@@ -111,12 +166,63 @@ img {
      transform: rotate(35deg);
  }
 
-
 @media screen and (max-width: 620px){
     .user-view-table {
+        width: calc(100% - 20px);
+        margin-left: 5px;
+        margin-right: 5px;
     }
-    .name, .age , .phone {
-        width: 100px;
+    .phone {
+        flex-grow: 2;
+    }
+    .age, .favorites{
+        flex-grow: 1;
+    }
+}
+
+@media screen and (max-width: 541px){
+    img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .user-view-table {
+        flex-direction: column;
+    }
+
+    .name-age-wrapper,
+    .phone-favorites-wrapper {
+        width: 100%;
+    }
+    .phone-favorites-wrapper {
+        order: 0;
+    }
+
+    .phone {
+        padding-left: 10px;
+        justify-content: left;
+    }
+
+    .favorites {
+        display: flex;
+        justify-content: flex-end;
+        padding-right: 5px;
+        padding-bottom: 5px;
+    }
+
+    .star {
+        font-size: 10px;
+    }
+
+    .star-active {
+        font-size: 10px;
+    }
+
+    .age {
+        display: flex;
+        justify-content: flex-end;
+        padding-right: 10px;
+        margin: 0;
     }
 }
 
