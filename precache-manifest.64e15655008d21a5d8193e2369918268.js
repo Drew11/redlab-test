@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "0557bd4b53431b3a0ef79a5d05541f42",
+    "revision": "20682a663792f129f96a7bbff4ddcd62",
     "url": "/redlab-test/index.html"
   },
   {
-    "revision": "a0245590aa7196e22646",
-    "url": "/redlab-test/static/css/main.26dbe1b5.chunk.css"
+    "revision": "e9df3d797a7db3e98e1e",
+    "url": "/redlab-test/static/css/main.c7543cc3.chunk.css"
   },
   {
     "revision": "8bf76837c25b6a891697",
@@ -16,7 +16,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/redlab-test/static/js/2.be43a319.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "a0245590aa7196e22646",
+    "revision": "e9df3d797a7db3e98e1e",
     "url": "/redlab-test/static/js/main.c8a430ed.chunk.js"
   },
   {
