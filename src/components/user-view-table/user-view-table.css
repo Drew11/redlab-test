@@ -11,8 +11,6 @@
     background-color: whitesmoke;
     transition-delay: 2ms;
     opacity: 0;
-    flex-basis: 0;
-    flex-shrink: 1;
     -webkit-animation-name: fadein;
     -webkit-animation-duration: 1s;
     -webkit-animation-delay: 0.4s;
@@ -188,7 +186,7 @@ img {
 
     .user-view-table {
         flex-direction: column;
-        height: auto;
+        height: min-content;
     }
 
     .name-age-wrapper,

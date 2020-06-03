@@ -28,8 +28,8 @@
       <file leaf-file-name="user-view-table.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/components/user-view-table/user-view-table.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="464">
-              <caret line="16" column="34" selection-start-line="16" selection-start-column="34" selection-end-line="16" selection-end-column="34" />
+            <state relative-caret-position="374">
+              <caret line="188" column="21" selection-start-line="188" selection-start-column="21" selection-end-line="188" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -103,7 +103,7 @@
       <path value="$PROJECT_DIR$/package.json" />
     </packageJsonPaths>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="2" />
     <option name="y" value="1" />
     <option name="width" value="1938" />
@@ -196,12 +196,12 @@
       <workItem from="1590906048238" duration="22703000" />
       <workItem from="1590992589626" duration="32111000" />
       <workItem from="1591072618827" duration="19701000" />
-      <workItem from="1591171005571" duration="5223000" />
+      <workItem from="1591171005571" duration="5956000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="123144000" />
+    <option name="totallyTimeSpent" value="123877000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -216,7 +216,7 @@
     <frame x="-9" y="-9" width="1938" height="1050" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16860466" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16860466" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32992035" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5026427" side_tool="true" weight="0.32992035" />
@@ -465,8 +465,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/user-view-table/user-view-table.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="464">
-          <caret line="16" column="34" selection-start-line="16" selection-start-column="34" selection-end-line="16" selection-end-column="34" />
+        <state relative-caret-position="374">
+          <caret line="188" column="21" selection-start-line="188" selection-start-column="21" selection-end-line="188" selection-end-column="21" />
         </state>
       </provider>
     </entry>
