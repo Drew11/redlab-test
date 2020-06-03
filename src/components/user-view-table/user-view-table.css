@@ -13,6 +13,11 @@
     opacity: 0;
     flex-basis: 0;
     flex-shrink: 1;
+    -webkit-animation-name: fadein;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-delay: 0.4s;
+    -moz-animation-iteration-count: 1 ;
+    -moz-animation-fill-mode: forwards;
 }
 
 .phone-favorites-wrapper {
@@ -183,9 +188,7 @@ img {
 
     .user-view-table {
         flex-direction: column;
-        height: min-content;
-        height: -moz-min-content;
-        height: -webkit-min-content;
+        height: auto;
     }
 
     .name-age-wrapper,
