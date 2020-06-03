@@ -44,7 +44,6 @@ const UserViewPrev = (props) => {
         }
     }, [y]);
 
-    console.log(y)
     return (
             <div className={`user-view-prev ${width100}`}
                  ref={userViewTableRef}

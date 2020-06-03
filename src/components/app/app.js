@@ -134,24 +134,22 @@ class App extends React.Component {
                    userPhone={user.phone}
                    addFavorites={this.addFavorites}
                    favorites={this.state.favorites}
-             />
+             />;
         }
 
         if (this.state.appView === 'prev'){
-
             component = <UserViewPrev
-                            key={user.id}
-                            userImage={user.image}
-                            userName={user.name[this.state.langInterface]}
-                            userAge={user.age}
-                            userPhone={user.phone}
-                            userPhrase={user.phrase[this.state.langInterface]}
-                            userVideo={Object.getOwnPropertyNames(user).includes('video')? user.video : null}
-                         />
-
+                    key={user.id}
+                    userImage={user.image}
+                    userName={user.name[this.state.langInterface]}
+                    userAge={user.age}
+                    userPhone={user.phone}
+                    userPhrase={user.phrase[this.state.langInterface]}
+                    userVideo={Object.getOwnPropertyNames(user).includes('video')? user.video : null}
+            />;
         }
 
-          return component;
+        return component;
 
       }): null;
 

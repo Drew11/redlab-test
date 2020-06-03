@@ -19,6 +19,11 @@ const UserViewTable = (props)=>{
         animationDuration: `1s`,
         animationIterationCount: 1,
         animationFillMode: `forwards`,
+        'WebkitAnimationDelay': `${index/4}s`,
+        'WebkitAnimationName': `fadein`,
+        'WebkitAnimationDuration': `1s`,
+        'WebkitAnimationIterationCount': 1 ,
+        'WebkitAnimationFillMode': `forwards`,
     };
 
     return (
