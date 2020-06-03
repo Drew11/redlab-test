@@ -186,7 +186,7 @@ img {
 
     .user-view-table {
         flex-direction: column;
-        height: min-content;
+        height: auto;
     }
 
     .name-age-wrapper,
