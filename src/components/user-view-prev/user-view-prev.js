@@ -24,10 +24,12 @@ const UserViewPrev = (props) => {
     const [y, setY] = useState(getWindowDimensions().height/2);
     const [color, setColor] = useState('');
     const width100 = userVideo ? 'width100' : '';
+    const phraseStyle = userVideo? 'phrase-video':'phrase';
+    const userInfoStyle = userVideo? 'user-info-video': 'user-info';
     const userViewTableRef = useRef();
 
-    const listenScrollEvent = event => {
 
+    const listenScrollEvent = event => {
         const newCoord = window.scrollY + y;
         setY(newCoord);
     };
@@ -44,12 +46,14 @@ const UserViewPrev = (props) => {
         }
     }, [y]);
 
+
+
     return (
             <div className={`user-view-prev ${width100}`}
                  ref={userViewTableRef}
             >
-
-                <div className="user-info">
+                <div className={userInfoStyle}
+                >
                     <div className="avatar-name">
                         <img src={require(`../../materials/images/${userImage}.svg`)} alt=""/>
 
@@ -66,22 +70,20 @@ const UserViewPrev = (props) => {
                     {userPhone}
                 </span>
 
-                    <p className="phrase">
+                    <p className={phraseStyle}
+                    >
                         {userPhrase}
                     </p>
                 </div>
 
-
                 {
                     userVideo &&
-                <div className={`video ${color}`} >
-
-                        <video width="1" height="auto" controls="controls" autoPlay={autoPlay}
+                    <div className={`video ${color}`} >
+                        <video controls="controls" autoPlay={autoPlay}
                         >
                             <source src={require(`../../materials/videos/${userVideo}.mp4`)}/>
                         </video>
-
-                </div>
+                    </div>
                 }
             </div>
     )

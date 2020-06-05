@@ -3,9 +3,10 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    width: 300px;
+    width: 298px;
     border: 1px solid gray;
-    margin-right: 10px;
+    margin-left: 2px;
+    margin-right: 3px;
 }
 
 ul {
@@ -33,4 +34,11 @@ li:hover {
 
 .active {
     background: gainsboro;
+}
+
+@media screen and (max-width: 633px) {
+    .sort {
+        margin-left: 9px;
+    }
+
 }

@@ -15,9 +15,28 @@
     overflow: hidden;
 
 }
-.user-info{
-    flex: 0 50%;
+
+.user-info {
+    flex-direction: column;
+    align-items: left;
 }
+
+.user-info-video {
+    flex: 0 50%;
+    flex-direction: column;
+}
+
+.user-info span,
+.user-info-video span {
+   display: block;
+   text-align: left;
+}
+
+.user-info .phone {
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
 .avatar-name {
     display: flex;
     align-items: center;
@@ -25,18 +44,22 @@
 }
 
 .phrase {
-    flex: 1 1 0;
-    margin-left: 10px;
-    width: 300px;
+    margin: 0 10px 5px 10px ;
+}
+
+.phrase-video {
+    margin: 10px 10px 5px 10px ;
 }
 
 .width100 {
     flex: 0 calc(70% + 12px);
     margin: 5px 0;
 }
+
 .video {
     display: flex;
     flex: 0 50%;
+    justify-content: center;
     padding: 10px;
     align-items: center;
 }
@@ -58,17 +81,8 @@ video {
         margin: 5px 10px ;
     }
 
-    video {
-        width: 100%
-    }
-
     .width100 {
         flex: 0 100%;
         margin: 5px 10px;
     }
-}
-
-
-.test {
-    background: red;
 }
