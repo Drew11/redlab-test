@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="156f740a-5671-47a3-8ae1-69d66832c626" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/app/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/app/app.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/sort/sort.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/sort/sort.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/user-view-prev/user-view-prev.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/user-view-prev/user-view-prev.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/user-view-prev/user-view-prev.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/user-view-prev/user-view-prev.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/user-view-table/user-view-table.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/user-view-table/user-view-table.css" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -24,8 +19,8 @@
       <file leaf-file-name="user-view-prev.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/user-view-prev/user-view-prev.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1798">
-              <caret line="72" column="34" lean-forward="true" selection-start-line="72" selection-start-column="34" selection-end-line="72" selection-end-column="45" />
+            <state relative-caret-position="-1272">
+              <caret line="26" column="48" selection-start-line="26" selection-start-column="48" selection-end-line="26" selection-end-column="48" />
             </state>
           </provider>
         </entry>
@@ -33,8 +28,8 @@
       <file leaf-file-name="user-view-prev.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/components/user-view-prev/user-view-prev.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="377">
-              <caret line="46" column="12" lean-forward="true" selection-start-line="46" selection-start-column="12" selection-end-line="46" selection-end-column="13" />
+            <state relative-caret-position="241">
+              <caret line="14" column="21" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -75,8 +70,8 @@
         <option value="$PROJECT_DIR$/src/components/user-view-table/user-view-table.css" />
         <option value="$PROJECT_DIR$/src/components/app/app.css" />
         <option value="$PROJECT_DIR$/src/components/sort/sort.css" />
-        <option value="$PROJECT_DIR$/src/components/user-view-prev/user-view-prev.css" />
         <option value="$PROJECT_DIR$/src/components/user-view-prev/user-view-prev.js" />
+        <option value="$PROJECT_DIR$/src/components/user-view-prev/user-view-prev.css" />
       </list>
     </option>
   </component>
@@ -193,12 +188,12 @@
       <workItem from="1591286507621" duration="5060000" />
       <workItem from="1591338539419" duration="4746000" />
       <workItem from="1591360303338" duration="10000" />
-      <workItem from="1591367391124" duration="4977000" />
+      <workItem from="1591367391124" duration="5889000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="142466000" />
+    <option name="totallyTimeSpent" value="143378000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -210,8 +205,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1938" height="1050" extended-state="6" />
-    <editor active="true" />
+    <frame x="-9" y="-9" width="1938" height="1050" extended-state="7" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16860466" />
       <window_info anchor="bottom" id="TODO" order="8" weight="0.32992035" />
@@ -221,7 +215,7 @@
       <window_info anchor="bottom" id="Run" order="2" weight="0.32992035" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49682876" weight="0.32992035" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" sideWeight="0.49682876" visible="true" weight="0.32992035" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -502,15 +496,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/user-view-prev/user-view-prev.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1798">
-          <caret line="72" column="34" lean-forward="true" selection-start-line="72" selection-start-column="34" selection-end-line="72" selection-end-column="45" />
+        <state relative-caret-position="-1272">
+          <caret line="26" column="48" selection-start-line="26" selection-start-column="48" selection-end-line="26" selection-end-column="48" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/user-view-prev/user-view-prev.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="377">
-          <caret line="46" column="12" lean-forward="true" selection-start-line="46" selection-start-column="12" selection-end-line="46" selection-end-column="13" />
+        <state relative-caret-position="241">
+          <caret line="14" column="21" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
         </state>
       </provider>
     </entry>
