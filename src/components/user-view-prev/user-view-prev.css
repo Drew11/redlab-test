@@ -80,9 +80,8 @@ video {
         margin: 5px 10px ;
     }
 
-    .user-info .phone,
-    .user-info-video .phone {
-        margin-left: 0;
+     .phone {
+       margin-left: 10px;
     }
 
     .width100 {
